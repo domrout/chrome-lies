@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reddit is a liar",
+  "description": "Points out that no-one really believes what they believe on the internet, for a more enjoyable Reddit experience.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://www.reddit.com/*"],
+      "js": ["jquery.js", "marquee.js", "lies_script.js"]
+    }
+  ]
+}
